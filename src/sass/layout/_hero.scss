@@ -1,0 +1,54 @@
+@use '../global' as g;
+@use '../util' as u;
+
+main {
+    color: g.$white;
+    width: min(100% - u.rem(40), u.rem(1000));
+    margin: 2rem auto;
+    // margin-inline: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    position: relative;
+    span {
+        color: g.$accent;
+        padding: 1rem 0;
+        font-family: g.$font1;
+        font-size: u.rem(18);
+    }
+
+    h1 {
+        font-family: g.$font3;
+        font-weight: 500;
+        font-size: u.rem(44);
+        text-transform: uppercase;
+        padding: 0.5rem 0;
+        color: #B196C1;
+
+        span {
+            font-family: g.$font3;
+            font-weight: 500;
+            font-size: u.rem(44);
+            text-transform: uppercase;
+            color: #816790;
+        }
+    }
+    p{
+        font-family: g.$font1;
+        font-size: u.rem(26);
+        width: 90%;
+        color: #957DA4;
+        padding: 0.25rem 0;
+    }
+    .hero-bg-text{
+        position: absolute;
+        font-family: g.$font4;
+        font-size: u.rem(80);
+        bottom: u.rem(-30);
+        color: #2D1938;
+        z-index: -1;
+    }
+}

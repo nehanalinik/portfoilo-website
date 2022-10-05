@@ -1,0 +1,22 @@
+@use './colors' as c;
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    // font-size: 62.5%;
+    font-size: 100%;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: c.$primary;
+    overflow-x: hidden;
+}

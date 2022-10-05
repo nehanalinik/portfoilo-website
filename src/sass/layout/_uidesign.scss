@@ -1,0 +1,95 @@
+@use '../global' as g;
+@use '../util' as u;
+
+.uidesign{
+    background-color: #321E3E;
+    margin: 2rem 0;
+    position: relative;
+    z-index: 1;
+    .ui-content{
+        width: min(100% - u.rem(40), u.rem(1000));
+        margin-inline: auto;
+        padding: 5rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+        .title{
+            h3{
+                font-family: g.$font1;
+                font-size: u.rem(22);
+                letter-spacing: u.rem(1.55);
+                color: g.$accent;
+                text-align: center;
+                padding: 1rem 0;
+            }
+        }
+        .imgContent{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5rem;
+            margin: 0 auto;
+            @include u.breakpoint-down(medium) {
+            grid-template-columns: repeat(1, 1fr);
+            }
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.3s all ease-in;
+                &:hover{
+                    box-shadow: 10px 10px 50px 2px rgba(100, 100, 100, 0.4);
+                    transform: translateY(u.rem(-10));
+                }
+                img{
+                    width: 100%;
+                    @include u.breakpoint-down(small) {
+                        width: 90%;      
+                    }
+                }
+            }
+        }
+
+
+        a {
+            text-align: center;
+            // margin: 2rem 0;
+            button {
+                background: none;
+                border: none;
+                font-family: g.$font1;
+                font-size: u.rem(18);
+                color: g.$accent;
+                border: 1px solid g.$accent;
+                padding: u.rem(10) u.rem(20);
+                border-radius: u.rem(5);
+                cursor: pointer;
+                transition: 0.3s all ease-out;
+    
+                &:hover {
+                    background-color: #A60C84;
+                    color: g.$white;
+                }
+            }
+        }
+    }
+
+    .ui-bg-text {
+        position: absolute;
+        font-family: g.$font4;
+        font-size: u.rem(100);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #40284f;
+        white-space: nowrap;
+        z-index: -1;
+
+        @include u.breakpoint-down(medium) {
+            // font-size: u.rem(140);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

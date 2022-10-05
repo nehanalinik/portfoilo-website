@@ -1,0 +1,103 @@
+@use '../global' as g;
+@use '../util' as u;
+
+.contact {
+    width: min(100% - u.rem(40), u.rem(1000));
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    color: g.$white;
+    font-family: g.$font1;
+    row-gap: 2rem;
+    position: relative;
+    .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 2rem;
+        width: 80%;
+        margin-inline: auto;
+
+        h3 {
+            font-size: u.rem(22);
+            letter-spacing: u.rem(1.55);
+            color: g.$accent;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            padding: 1rem 0;
+            font-size: u.rem(17);
+            word-spacing: u.rem(1);
+        }
+    }
+
+    form {
+        width: 80%;
+        padding: 1rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        @include u.breakpoint-down(medium) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        column-gap: u.rem(30);
+        row-gap: u.rem(20);
+        :nth-child(3){
+            grid-column: 1/-1;
+        }
+        textarea{
+            grid-column: 1/-1;
+        }
+        input, textarea{
+            padding: u.rem(16);
+            background: rgba(43, 25, 53, 0.5);
+            border: 1px solid #F143C1;
+            border-radius: u.rem(4);
+            font-family: g.$font1;
+            color: g.$white;
+            font-size: u.rem(16);
+            letter-spacing: u.rem(1);
+            &:focus{
+                outline: none;
+                border: 0.5px solid g.$white;
+                color: g.$accent;
+            }
+        }
+        .btn{
+            padding: u.rem(12);
+            grid-column: 1/-1;
+            color: g.$accent;
+            text-transform: uppercase;
+            font-size: u.rem(17);
+            transition: 0.3s all ease;
+            cursor: pointer;
+            &:hover{
+                background: g.$accent;
+                color: g.$white;
+            }
+        }
+    }
+
+    .contact-bg-text{
+            position: absolute;
+            font-family: g.$font4;
+            font-size: u.rem(120);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #40284f;
+            white-space: nowrap;
+            z-index: -1;
+    
+            @include u.breakpoint-down(medium) {
+                font-size: u.rem(140);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+    }
+}
