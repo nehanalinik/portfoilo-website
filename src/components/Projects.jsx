@@ -45,7 +45,7 @@ const Projects = () => {
               </div>
             </div>
           );
-        })}
+        }).reverse()}
       </div>
         <a href="https://github.com/nehanalinik" target="_blank" rel="noreferrer"><button>View More</button></a>
       <div className='projects-bg-text'>my projects</div>
