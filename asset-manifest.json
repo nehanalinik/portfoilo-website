@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfoilo-website/static/css/main.a4514118.css",
+    "main.js": "/portfoilo-website/static/js/main.c5554aa7.js",
+    "static/media/beachResort.png": "/portfoilo-website/static/media/beachResort.4845bd389334d2e30184.png",
+    "static/media/Resume-Neha.pdf": "/portfoilo-website/static/media/Resume-Neha.c73d2dac7a8d33cc9ba7.pdf",
+    "static/media/RestaurantLanging.png": "/portfoilo-website/static/media/RestaurantLanging.d6604e251713e79e3ddb.png",
+    "static/media/learningUI.png": "/portfoilo-website/static/media/learningUI.f805985c80d15cc35abd.png",
+    "static/media/paymentUI.png": "/portfoilo-website/static/media/paymentUI.702a76c5ac3ae19b8d2f.png",
+    "static/media/loginUI.png": "/portfoilo-website/static/media/loginUI.769b0814705b6a373fb5.png",
+    "static/media/SignUpForm.png": "/portfoilo-website/static/media/SignUpForm.468e18487d7d7201c0fc.png",
+    "static/media/eLearning.png": "/portfoilo-website/static/media/eLearning.9de220e99be9ed7cda6a.png",
+    "static/media/calculatorUI.png": "/portfoilo-website/static/media/calculatorUI.608c6f92e3e1f84075c5.png",
+    "index.html": "/portfoilo-website/index.html",
+    "main.a4514118.css.map": "/portfoilo-website/static/css/main.a4514118.css.map",
+    "main.c5554aa7.js.map": "/portfoilo-website/static/js/main.c5554aa7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4514118.css",
+    "static/js/main.c5554aa7.js"
+  ]
+}
