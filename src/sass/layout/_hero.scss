@@ -5,7 +5,6 @@ main {
     color: g.$white;
     width: min(100% - u.rem(40), u.rem(1000));
     margin: 2rem auto;
-    // margin-inline: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -26,21 +25,24 @@ main {
         font-size: u.rem(44);
         text-transform: uppercase;
         padding: 0.5rem 0;
-        color: #B196C1;
+        // color: #B196C1;
+        color: g.$light-pink;
 
         span {
             font-family: g.$font3;
             font-weight: 500;
             font-size: u.rem(44);
             text-transform: uppercase;
-            color: #816790;
+            // color: #816790;
+            color: g.$bg-color2;
         }
     }
     p{
         font-family: g.$font1;
         font-size: u.rem(26);
+        font-weight: 500;
         width: 90%;
-        color: #957DA4;
+        color: g.$header-color;
         padding: 0.25rem 0;
     }
     .hero-bg-text{
@@ -48,7 +50,8 @@ main {
         font-family: g.$font4;
         font-size: u.rem(80);
         bottom: u.rem(-30);
-        color: #2D1938;
+        // color: #2D1938;
+        color: g.$bg-color1;
         z-index: -1;
     }
 }

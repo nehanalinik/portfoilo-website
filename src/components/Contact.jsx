@@ -53,14 +53,14 @@ const Contact = () => {
       <form ref={form} onSubmit={sendEmail}>
         <input
           type="text"
-          placeholder="What's your name..😄"
+          placeholder="What's your name.."
           name="name"
           required
           autoComplete="off"
         />
         <input
           type="email"
-          placeholder="Your Email Address..😎"
+          placeholder="Your Email Address.."
           name="email"
           pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
           title="must be a valid email address"
@@ -69,14 +69,14 @@ const Contact = () => {
         />
         <input
           type="text"
-          placeholder="Subject Here..🥰"
+          placeholder="Subject Here.."
           name="subject"
           required
           autoComplete="off"
         />
         <textarea
           type="text"
-          placeholder="Your Message..🤗"
+          placeholder="Your Message.."
           name="message"
           required
           autoComplete="off"

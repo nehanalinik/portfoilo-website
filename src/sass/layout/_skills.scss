@@ -3,7 +3,8 @@
 
 .skills{
     margin: 8rem 0 4rem;
-    background-color: #321E3E;
+    // background-color: #321E3E;
+    background-color: g.$light-purple;
     z-index: 1;
     position: relative;
     .skills__content{
@@ -47,7 +48,8 @@
             font-size: u.rem(100);
             bottom: 0;
             right: 0;
-            color: #392247;
+            // color: #392247;
+            color: g.$bg-color2;
             z-index: -1;
         }
     }

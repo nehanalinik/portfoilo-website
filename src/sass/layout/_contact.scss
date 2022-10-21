@@ -54,8 +54,9 @@
         }
         input, textarea{
             padding: u.rem(16);
-            background: rgba(43, 25, 53, 0.5);
-            border: 1px solid #F143C1;
+            background: rgba(25, 34, 53, 0.5);
+            // border: 1px solid #F143C1;
+            border: 1px solid g.$accent;
             border-radius: u.rem(4);
             font-family: g.$font1;
             color: g.$white;
@@ -89,7 +90,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: #40284f;
+            // color: #40284f;
+            color: g.$bg-color1;
             white-space: nowrap;
             z-index: -1;
     

@@ -2,7 +2,8 @@
 @use '../util' as u;
 
 footer{
-    background-color: #1C0D25;
+    // background-color: #1C0D25;
+    background-color: g.$bg-color1;
     margin-top: 5rem;
     .top-content{
         width: min(100% - u.rem(40), u.rem(1000));
@@ -20,6 +21,10 @@ footer{
         .footer-social{
             a{
                 color: g.$purple2;
+                transition: 0.3s all ease-in;
+                &:hover{
+                    color: g.$accent;
+                }
             }
             display: flex;
             align-items: center;
@@ -27,7 +32,8 @@ footer{
         }
     }
     .bottom-content{
-        background-color: #150C1B;
+        // background-color: #150C1B;
+        background-color: g.$secondary-black;
         padding: 1rem 0;
         p{
             font-family: g.$font1;

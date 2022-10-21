@@ -2,7 +2,8 @@
 @use '../util' as u;
 
 .uidesign{
-    background-color: #321E3E;
+    // background-color: #321E3E;
+    background-color: g.$light-purple;
     margin: 2rem 0;
     position: relative;
     z-index: 1;
@@ -67,7 +68,8 @@
                 transition: 0.3s all ease-out;
     
                 &:hover {
-                    background-color: #A60C84;
+                    // background-color: #A60C84;
+                    background-color: g.$accent;
                     color: g.$white;
                 }
             }
@@ -81,12 +83,12 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: #40284f;
+        // color: #40284f;
+        color: g.$bg-color2;
         white-space: nowrap;
         z-index: -1;
 
         @include u.breakpoint-down(medium) {
-            // font-size: u.rem(140);
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);

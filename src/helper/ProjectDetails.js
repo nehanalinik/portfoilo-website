@@ -52,7 +52,7 @@ export const ProjectDetails = [
     {
         id:6,
         projectName: "React Admin Dashboard",
-        skills:["React", "React Router Dom", "Material Ui","Yup", "React Pro Sidebar", "FullCalender", "Formik","Material Ui Data Grid" , "Nivo Charts"],
+        skills:["React", "React Router Dom", "Material Ui","React Pro Sidebar","Yup" , "FullCalender", "Formik","Material Ui Data Grid" , "Nivo Charts"],
         picture: adminDashboard,
         live:"https://nnk-react-admin-dashboard.netlify.app/",
         code:"https://github.com/nehanalinik/react-admin-dashboard"
