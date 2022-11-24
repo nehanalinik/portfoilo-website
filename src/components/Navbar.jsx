@@ -76,9 +76,20 @@ const Navbar = () => {
                 Contact
               </Link>
             </li>
-            <a href={resume} download="Neha-Resume.pdf">
-              <div className="cta">Resume</div>
-            </a>
+            <li className="nav-item">
+              <a
+                href="https://neha-blog.netlify.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href={resume} download="Neha-Resume.pdf">
+                <div className="cta">Resume</div>
+              </a>
+            </li>
           </ul>
           <div className="mobile-menu" onClick={handleClick}>
             {nav ? (

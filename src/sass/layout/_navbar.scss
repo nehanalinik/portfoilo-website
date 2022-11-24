@@ -4,7 +4,7 @@
 header{
     color: g.$white;
     font-family: g.$font1;
-    height: 11vh;
+    height: 10vh;
     position: fixed;
     top: 0;
     width: 100%;
@@ -19,6 +19,9 @@ header{
         justify-content: space-between;
         width: min(100% - u.rem(40), u.rem(1000));
         margin-inline: auto;
+        @include u.breakpoint-down(xsmall) {
+            margin-top: 0.2rem;
+        }
         a{
             color: g.$white;
         }
@@ -49,7 +52,7 @@ header{
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            row-gap: 4rem;
+            row-gap: 3rem;
             transition: 0.3s;
             z-index: 99;
             .nav-item{
