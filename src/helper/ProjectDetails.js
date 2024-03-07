@@ -103,3 +103,33 @@ export const ProjectDetails = [
     code: "https://github.com/nehanalinik/AromaBeauty",
   },
 ];
+
+export const ReviewDetails = [
+  {
+    id: 1,
+    reviewContents: `"Neha is indeed an amazing freelancer I have ever worked with. She was able to help me design my web's page and write its creative contents. She delivered an excellent design on time. I highly recommend her"`,
+    name: "Rahul K.",
+    designation: "Client Specialist",
+    reviewFor: "Web Development - Jan 2023",
+    source: "LinkedIn - Upwork",
+    //reviewLink: 'https://www.freelancer.com/u/nehanalini27?review_context_id=2050688&review_type=contest&sb=t'
+  },
+  {
+    id: 2,
+    reviewContents: `"Good to work with Neha , the things which were developed and given were so reliable and too good.Neha submitted my project in lesser time. Thank u neha hope we work both again in future"`,
+    name: "Navaneeth L.",
+    designation: "Software Engineer",
+    reviewFor: "Frontend Development - Nov 2022",
+    source: "LinkedIn - Upwork",
+    //reviewLink: 'https://www.freelancer.com/u/nehanalini27?review_context_id=2050688&review_type=contest&sb=t'
+  },
+  {
+    id: 3,
+    reviewContents: `"Thank you very much!"`,
+    name: "Anna S.",
+    designation: "Freelance Client",
+    reviewFor: "Christmas card graphics - Jan 2021",
+    source: "Freelancer.com",
+    reviewLink: 'https://www.freelancer.com/u/nehanalini27?review_context_id=2050688&review_type=contest&sb=t'
+  },
+]

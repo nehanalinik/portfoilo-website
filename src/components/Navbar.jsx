@@ -54,6 +54,18 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link
+                to="reviews"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={1200}
+                onClick={closeMenu}
+              >
+                Reviews
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
                 to="projects"
                 spy={true}
                 smooth={true}
@@ -69,14 +81,14 @@ const Navbar = () => {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-38}
+                offset={-48}
                 duration={1200}
                 onClick={closeMenu}
               >
                 Contact
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a
                 href="https://neha-blog.netlify.app/"
                 rel="noopener noreferrer"
@@ -84,7 +96,7 @@ const Navbar = () => {
               >
                 Blog
               </a>
-            </li>
+            </li> */}
             <li>
               <a href={resume} download="Neha-Resume.pdf">
                 <div className="cta">Resume</div>
