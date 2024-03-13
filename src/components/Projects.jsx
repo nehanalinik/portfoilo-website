@@ -1,6 +1,7 @@
 import React from "react";
 import { RiShareBoxLine, RiGithubFill } from "react-icons/ri";
 import { ProjectDetails } from "../helper/ProjectDetails";
+import ReactGA from "react-ga4";
 
 const Projects = () => {
   return (
@@ -28,13 +29,33 @@ const Projects = () => {
                     ))}
                   </ul>
                   <ul className="live-view">
-                    <a href={items.live} target="_blank" rel="noreferrer">
+                    <a
+                      href={items.live}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={() => {
+                        ReactGA.event("live_link_click", {
+                          project_name: items.projectName,
+                          project_link: items.live,
+                        });
+                      }}
+                    >
                       <div className="live">
                         <RiShareBoxLine size={24} />
                         Live
                       </div>
                     </a>
-                    <a href={items.code} target="_blank" rel="noreferrer">
+                    <a
+                      href={items.code}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={() => {
+                        ReactGA.event("code_link_click", {
+                          project_name: items.projectName,
+                          project_link: items.code,
+                        });
+                      }}
+                    >
                       <div className="github">
                         <RiGithubFill size={24} />
                         Code
@@ -47,8 +68,10 @@ const Projects = () => {
           );
         }).reverse()}
       </div>
-        <a href="https://github.com/nehanalinik" target="_blank" rel="noreferrer"><button>View More</button></a>
-      <div className='projects-bg-text'>my projects</div>
+      <a href="https://github.com/nehanalinik" target="_blank" rel="noreferrer">
+        <button>View More</button>
+      </a>
+      <div className="projects-bg-text">my projects</div>
     </section>
   );
 };

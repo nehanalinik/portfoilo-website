@@ -1,7 +1,9 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ReactGA from 'react-ga4';
+
 const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
@@ -39,7 +41,24 @@ const Contact = () => {
       );
     e.target.reset();
   };
+  const trackInputChange = (event) => {
+    debugger;
+    const fieldName = event.target.name;
+    const fieldValue = event.target.value;
+    ReactGA.event('contact_input_change', {
+      'field_name': fieldName,
+      'field_value': fieldValue
+    });
+  };
 
+  useEffect(() => {
+    const inputs = document.querySelectorAll('input[name="name"], input[name="email"], input[name="subject"], input[name="message"]');
+    inputs.forEach(input => input.addEventListener('change', trackInputChange));
+
+    return () => {
+      inputs.forEach(input => input.removeEventListener('change', trackInputChange));
+    };
+  }, []);
   return (
     <section className="contact" id="contact">
       <div className="heading">
@@ -57,6 +76,7 @@ const Contact = () => {
           name="name"
           required
           autoComplete="off"
+          onChange={trackInputChange}
         />
         <input
           type="email"
@@ -66,6 +86,7 @@ const Contact = () => {
           title="must be a valid email address"
           required
           autoComplete="off"
+          onChange={trackInputChange}
         />
         <input
           type="text"
@@ -73,6 +94,7 @@ const Contact = () => {
           name="subject"
           required
           autoComplete="off"
+          onChange={trackInputChange}
         />
         <textarea
           type="text"
@@ -81,6 +103,7 @@ const Contact = () => {
           required
           autoComplete="off"
           minLength="5"
+          onChange={trackInputChange}
         />
         <input type="submit" className="btn" value="Send" />
         <ToastContainer />
