@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.c6c2193f.css",
-    "main.js": "/portfolio-website/static/js/main.cab34e0d.js",
+    "main.js": "/portfolio-website/static/js/main.72e0aea4.js",
     "static/media/beachResort.png": "/portfolio-website/static/media/beachResort.4845bd389334d2e30184.png",
     "static/media/Resume-Neha.pdf": "/portfolio-website/static/media/Resume-Neha.05528d4aca509c24e2c4.pdf",
     "static/media/RestaurantLanging.png": "/portfolio-website/static/media/RestaurantLanging.d6604e251713e79e3ddb.png",
@@ -16,10 +16,10 @@
     "static/media/calculatorUI.png": "/portfolio-website/static/media/calculatorUI.608c6f92e3e1f84075c5.png",
     "index.html": "/portfolio-website/index.html",
     "main.c6c2193f.css.map": "/portfolio-website/static/css/main.c6c2193f.css.map",
-    "main.cab34e0d.js.map": "/portfolio-website/static/js/main.cab34e0d.js.map"
+    "main.72e0aea4.js.map": "/portfolio-website/static/js/main.72e0aea4.js.map"
   },
   "entrypoints": [
     "static/css/main.c6c2193f.css",
-    "static/js/main.cab34e0d.js"
+    "static/js/main.72e0aea4.js"
   ]
 }
