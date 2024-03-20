@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Logo from "../assets/logo.png";
 import { CgClose, CgMenu } from "react-icons/cg";
 import { Link } from "react-scroll";
-import resume from "../assets/Resume-Neha.pdf";
+import resume from "../assets/Resume_NehaKennedy.pdf";
 import ReactGA from 'react-ga4';
 
 const Navbar = () => {
@@ -99,9 +99,9 @@ const Navbar = () => {
               </a>
             </li> */}
             <li>
-              <a href={resume} download="Neha-Resume.pdf" onClick={()=>{
+              <a href={resume} download="Resume_NehaKennedy.pdf" onClick={()=>{
                 ReactGA.event('resume-download', {
-                  'download_file': 'Neha-Resume.pdf'
+                  'download_file': 'Resume_NehaKennedy.pdf'
                 })
               }}>
                 <div className="cta">Resume</div>
