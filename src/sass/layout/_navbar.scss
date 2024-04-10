@@ -10,6 +10,7 @@ header{
     width: 100%;
     background-color: g.$primary;
     z-index: 99;
+    display: flex;
     @include u.breakpoint-down(small) {
         width: 100%;      
     }

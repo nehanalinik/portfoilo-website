@@ -1,58 +1,58 @@
 import eLearning from "../assets/eLearning.png";
-import beachResort from "../assets/beachResort.png";
-import restaurantWebsite from "../assets/RestaurantLanging.png";
-import adviceGenerator from "../assets/AdviceGenerator.png";
-import signUp from "../assets/SignUpForm.png";
+// import beachResort from "../assets/beachResort.png";
+// import restaurantWebsite from "../assets/RestaurantLanging.png";
+// import adviceGenerator from "../assets/AdviceGenerator.png";
+// import signUp from "../assets/SignUpForm.png";
 import adminDashboard from "../assets/dashboard.png";
 import tikroyalClone from "../assets/tikroyal.png";
 import amromaBeauty from "../assets/aromabeauty.png";
 
 export const ProjectDetails = [
-  {
-    id: 1,
-    projectName: "SignUp Form Validation",
-    skills: [
-      "Html",
-      "Css",
-      "Javascript",
-      "FlexBox",
-      "Mobile first workflow",
-      "responsive",
-    ],
-    picture: signUp,
-    live: "https://nehanalinik.github.io/intro-component-with-signup-form-master/",
-    code: "https://github.com/nehanalinik/intro-component-with-signup-form-master",
-  },
-  {
-    id: 2,
-    projectName: "Advice Generator App",
-    skills: ["Html", "Css", "React", "Advice Slip API", "FlexBox"],
-    picture: adviceGenerator,
-    live: "https://nehanalinik.github.io/advice-generator-react/",
-    code: "https://github.com/nehanalinik/advice-generator-react",
-  },
-  {
-    id: 3,
-    projectName: "Restaurant Landing Page",
-    skills: ["Html", "Css", "React", "FlexBox", "Grid"],
-    picture: restaurantWebsite,
-    live: "https://nehanalinik.github.io/react-restaurant/",
-    code: "https://github.com/nehanalinik/react-restaurant",
-  },
-  {
-    id: 4,
-    projectName: "Beach Resort Landing Page",
-    skills: [
-      "React",
-      "Flexbox",
-      "Grid",
-      "Tailwindcss",
-      "Mobile first workflow",
-    ],
-    picture: beachResort,
-    live: "https://nehanalinik.github.io/Beach-Resort-Landing-Page/",
-    code: "https://github.com/nehanalinik/Beach-Resort-Landing-Page",
-  },
+  // {
+  //   id: 1,
+  //   projectName: "SignUp Form Validation",
+  //   skills: [
+  //     "Html",
+  //     "Css",
+  //     "Javascript",
+  //     "FlexBox",
+  //     "Mobile first workflow",
+  //     "responsive",
+  //   ],
+  //   picture: signUp,
+  //   live: "https://nehanalinik.github.io/intro-component-with-signup-form-master/",
+  //   code: "https://github.com/nehanalinik/intro-component-with-signup-form-master",
+  // },
+  // {
+  //   id: 2,
+  //   projectName: "Advice Generator App",
+  //   skills: ["Html", "Css", "React", "Advice Slip API", "FlexBox"],
+  //   picture: adviceGenerator,
+  //   live: "https://nehanalinik.github.io/advice-generator-react/",
+  //   code: "https://github.com/nehanalinik/advice-generator-react",
+  // },
+  // {
+  //   id: 3,
+  //   projectName: "Restaurant Landing Page",
+  //   skills: ["Html", "Css", "React", "FlexBox", "Grid"],
+  //   picture: restaurantWebsite,
+  //   live: "https://nehanalinik.github.io/react-restaurant/",
+  //   code: "https://github.com/nehanalinik/react-restaurant",
+  // },
+  // {
+  //   id: 4,
+  //   projectName: "Beach Resort Landing Page",
+  //   skills: [
+  //     "React",
+  //     "Flexbox",
+  //     "Grid",
+  //     "Tailwindcss",
+  //     "Mobile first workflow",
+  //   ],
+  //   picture: beachResort,
+  //   live: "https://nehanalinik.github.io/Beach-Resort-Landing-Page/",
+  //   code: "https://github.com/nehanalinik/Beach-Resort-Landing-Page",
+  // },
   {
     id: 5,
     projectName: "e-Learning Website",
