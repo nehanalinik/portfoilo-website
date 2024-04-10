@@ -1,25 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.c6c2193f.css",
-    "main.js": "/portfolio-website/static/js/main.94a9368a.js",
-    "static/media/beachResort.png": "/portfolio-website/static/media/beachResort.4845bd389334d2e30184.png",
+    "main.css": "/portfolio-website/static/css/main.02593c80.css",
+    "main.js": "/portfolio-website/static/js/main.4a380b59.js",
     "static/media/Resume_NehaKennedy.pdf": "/portfolio-website/static/media/Resume_NehaKennedy.0f966adebc4c384f0fa2.pdf",
-    "static/media/RestaurantLanging.png": "/portfolio-website/static/media/RestaurantLanging.d6604e251713e79e3ddb.png",
     "static/media/learningUI.png": "/portfolio-website/static/media/learningUI.f805985c80d15cc35abd.png",
     "static/media/aromabeauty.png": "/portfolio-website/static/media/aromabeauty.4efaf5a6d99c26e49ef7.png",
     "static/media/paymentUI.png": "/portfolio-website/static/media/paymentUI.702a76c5ac3ae19b8d2f.png",
     "static/media/loginUI.png": "/portfolio-website/static/media/loginUI.769b0814705b6a373fb5.png",
     "static/media/tikroyal.png": "/portfolio-website/static/media/tikroyal.316c76f28f0ab1804b91.png",
-    "static/media/SignUpForm.png": "/portfolio-website/static/media/SignUpForm.468e18487d7d7201c0fc.png",
     "static/media/dashboard.png": "/portfolio-website/static/media/dashboard.d7f49297a603790eb2a4.png",
     "static/media/eLearning.png": "/portfolio-website/static/media/eLearning.9de220e99be9ed7cda6a.png",
     "static/media/calculatorUI.png": "/portfolio-website/static/media/calculatorUI.608c6f92e3e1f84075c5.png",
     "index.html": "/portfolio-website/index.html",
-    "main.c6c2193f.css.map": "/portfolio-website/static/css/main.c6c2193f.css.map",
-    "main.94a9368a.js.map": "/portfolio-website/static/js/main.94a9368a.js.map"
+    "main.02593c80.css.map": "/portfolio-website/static/css/main.02593c80.css.map",
+    "main.4a380b59.js.map": "/portfolio-website/static/js/main.4a380b59.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6c2193f.css",
-    "static/js/main.94a9368a.js"
+    "static/css/main.02593c80.css",
+    "static/js/main.4a380b59.js"
   ]
 }
