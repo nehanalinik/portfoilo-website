@@ -1,56 +1,71 @@
-@use '../global' as g;
-@use '../util' as u;
+@use "../global" as g;
+@use "../util" as u;
 
-.skills{
-    margin: 8rem 0 0rem;
-    // background-color: #321E3E;
-    background-color: g.$light-purple;
-    z-index: 1;
-    position: relative;
-    .skills__content{
-        padding: 3rem 0;
-        width: min(100% - u.rem(40), u.rem(1240));
-        margin-inline: auto;
-        .title{
-            font-family: g.$font1;
-            font-size: u.rem(22);
-            letter-spacing: u.rem(1.55);
-            color: g.$accent;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        .skill{
-            padding: 2rem 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            column-gap: 1rem;
-            row-gap: 2rem;
-            ul{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                row-gap: 1rem;
-                li{
-                    text-transform: uppercase;
-                    background-color: g.$light-purple;
-                    padding: 0.2rem 0.5rem;
-                    font-family: g.$font2;
-                    font-size: u.rem(16);
-                    color: g.$purple2;
-                    border-radius: 0.23rem;
-                }
-            }
-        }
-        .skills-bg-text{
-            position: absolute;
-            font-family: g.$font4;
-            font-size: u.rem(100);
-            bottom: 0;
-            right: 0;
-            // color: #392247;
-            color: g.$bg-color2;
-            z-index: -1;
-        }
+.skills {
+  margin: 8rem 0 0rem;
+  // background-color: #321E3E;
+  background-color: g.$light-purple;
+  z-index: 1;
+  position: relative;
+  .skills__content {
+    padding: 3rem 0;
+    width: min(100% - u.rem(40), u.rem(1240));
+    margin-inline: auto;
+    .title {
+      font-family: g.$font1;
+      font-size: u.rem(22);
+      letter-spacing: u.rem(1.55);
+      color: g.$accent;
+      text-align: center;
+      padding: 1rem 0;
     }
+    .skills-section {
+      padding: u.rem(20) 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: u.rem(20);
+      .skill {
+        display: flex;
+        flex-direction: column;
+        row-gap: u.rem(6);
+        column-gap: u.rem(20);
+        h3 {
+          grid-column: 1;
+          color: g.$accent;
+          font-family: g.$font1;
+          font-weight: 400;
+          font-size: u.rem(15.5);
+          text-transform: uppercase;
+        }
+        &-details {
+          grid-column: 2/-1;
+          display: flex;
+          column-gap: u.rem(8);
+          row-gap: u.rem(8);
+          flex-wrap: wrap;
+          ul {
+            border-radius: u.rem(4);
+            padding: u.rem(2) u.rem(10);
+            background-color: rgba(g.$bg-color2, 0.9);
+            border: 1px solid rgba(g.$light-pink, 0.1);
+            li {
+              font-family: g.$font1;
+              font-size: u.rem(18);
+              color: g.$purple2;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+    .skills-bg-text {
+      position: absolute;
+      font-family: g.$font4;
+      font-size: u.rem(100);
+      bottom: 0;
+      right: 0;
+      color: g.$bg-color2;
+      z-index: -1;
+    }
+  }
 }

@@ -1,4 +1,4 @@
-import eLearning from "../assets/eLearning.png";
+// import eLearning from "../assets/eLearning.png";
 // import beachResort from "../assets/beachResort.png";
 // import restaurantWebsite from "../assets/RestaurantLanging.png";
 // import adviceGenerator from "../assets/AdviceGenerator.png";
@@ -53,14 +53,14 @@ export const ProjectDetails = [
   //   live: "https://nehanalinik.github.io/Beach-Resort-Landing-Page/",
   //   code: "https://github.com/nehanalinik/Beach-Resort-Landing-Page",
   // },
-  {
-    id: 5,
-    projectName: "e-Learning Website",
-    skills: ["JSX", "React", "React Scroll", "React Router Dom", "Sass"],
-    picture: eLearning,
-    live: "https://nehanalinik.github.io/eLearning-Website/",
-    code: "https://github.com/nehanalinik/eLearning-Website",
-  },
+  // {
+  //   id: 5,
+  //   projectName: "e-Learning Website",
+  //   skills: ["JSX", "React", "React Scroll", "React Router Dom", "Sass"],
+  //   picture: eLearning,
+  //   live: "https://nehanalinik.github.io/eLearning-Website/",
+  //   code: "https://github.com/nehanalinik/eLearning-Website",
+  // },
   {
     id: 6,
     projectName: "React Admin Dashboard",
@@ -130,6 +130,7 @@ export const ReviewDetails = [
     designation: "Freelance Client",
     reviewFor: "Christmas card graphics - Jan 2021",
     source: "Freelancer.com",
-    reviewLink: 'https://www.freelancer.com/u/nehanalini27?review_context_id=2050688&review_type=contest&sb=t'
+    reviewLink:
+      "https://www.freelancer.com/u/nehanalini27?review_context_id=2050688&review_type=contest&sb=t",
   },
-]
+];

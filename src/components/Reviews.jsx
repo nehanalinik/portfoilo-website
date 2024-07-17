@@ -33,6 +33,7 @@ const Reviews = () => {
             </div>
           ))}
         </div>
+        <div className='reviews-bg-text'>my reviews</div>
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Logo from "../assets/logo.png";
 import { CgClose, CgMenu } from "react-icons/cg";
 import { Link } from "react-scroll";
-import resume from "../assets/Resume_NehaKennedy.pdf";
+import resume from "../assets/Resume_NehaNaliniKennedy.pdf";
 import ReactGA from 'react-ga4';
 
 const Navbar = () => {
